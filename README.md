@@ -1,2 +1,2 @@
 # wagala.github.io
-my website
+creating a personal website
