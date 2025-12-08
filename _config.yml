@@ -88,7 +88,7 @@ author:
   avatar           : "profile.png"
   bio              : "Data Scientist"
   location         :
-  employer         :
+  employer         :"DFCI"
   pubmed           :
   orcid            : "https://orcid.org/0000-0002-8337-5400?lang=en"
   googlescholar    : "https://scholar.google.com/citations?user=Uq2lFd4AAAAJ&hl=en"
@@ -260,7 +260,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Chicago # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/EST # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
