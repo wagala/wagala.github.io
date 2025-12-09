@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Adolphus Wagala"
   avatar           : "profile.png"
-  bio              : "Data Scientist"
+  bio              : "Biostatistician/Data Scientist"
   location         :
   employer         :"DFCI"
   pubmed           :
@@ -108,7 +108,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         :"https://www.linkedin.com/in/adolphus-wagala-10a675175/"
   mastodon         : #"fosstodon.org/@jayrobw"
   pinterest        :
   soundcloud       :
