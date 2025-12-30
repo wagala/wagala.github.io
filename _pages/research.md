@@ -21,5 +21,5 @@ matrices** that:
 
 Current projects include:
 
-#1. [Bayesian Boolean Matrix Factorization for Multiple Myeloma Copy‑Number Data](/research/bayesian-boolean-matrix-factorization/)
-#2. [Bayesian Ternary Matrix Factorization for Sign‑Aware Discrete Data](/research/bayesian-ternary-matrix-factorization/)
+1. [Bayesian Boolean Matrix Factorization for Multiple Myeloma Copy‑Number Data](/research/bayesian-boolean-matrix-factorization/)
+2. [Bayesian Ternary Matrix Factorization for Sign‑Aware Discrete Data](/research/bayesian-ternary-matrix-factorization/)
