@@ -1,4 +1,3 @@
-
 ---
 title: "Stock Price and Volumes Reaction to Annual Earnings Announcement"
 collection: publications
