@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Adolphus Wagala, PhD"
+title                    : "Adolphus Wagala,PhD"
 title_separator          : "-"
-name                     : &name "Adolphus Wagala, PhD"
-description              : &description "Research Fellow|Data Science"
+name                     : &name "Adolphus Wagala,PhD"
+description              : &description "Research Fellow"
 url                      : https://wagala.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "wagala/wagala.github.io"
@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Adolphus Wagala (PhD)"
   avatar           : "profile.png"
-  bio              : "Research Fellow/Data Scientist"
+  bio              : "Research Fellow"
   location         :
   employer         : "DFCI"
   pubmed           :
