@@ -1,40 +1,25 @@
 ---
-layout: archive
 title: "Research"
 permalink: /research/
-author_profile: true
-header:
-  og_image: "research/ecdf.png"
 ---
 
-My academic research falls into two main areas: understanding the influence of
-geography on actor behavior before, during, and after civil conflict, and
-developing new tools to improve the study of institutions (both formal and
-informal) in peace and conflict. One strand of research in this first area
-explores how the territories that ethnic groups inhabit shape rebel group
-formation and condition their relationship with the state. My interest in
-geography also informs projects on active conflicts including the targeting of
-UN peacekeepers by insurgent groups, civilian victimization after rebel
-territorial conquest, and communal violence in fragile settings.
+My research focuses on **unsupervised learning via Discrete Matrix Factorization**, with a strong
+motivation from **Multiple Myeloma (MM)** genomics data.
 
-My other main research agenda uses advanced methods to develop new measures of
-institutions. One project uses Bayesian item response theory to measure the
-strength of peace agreements as a latent variable and free researchers from
-post-treatment bias caused by using the duration of agreements as a proxy for
-their strength. In others, I apply unsupervised learning techniques to over a
-billion observations of product-level international trade data to measure
-economic interdependence and illicit economic exchange.
+Multiple Myeloma is a malignancy of post‑germinal centre B cells (plasma cells) and is driven by
+chromosomal and genetic alterations such as translocations, copy‑number abnormalities (CNAs), and
+point mutations. In particular, CNAs—gains or losses of chromosomes or chromosome arms, deletions
+of 1p, and gains of 1q—play an important role in prognosis, treatment choice, and disease relapse.
 
-In a new avenue of research, I leverage social media data to explore
-participation in extremist movements across multiple contexts, gaining insight
-into the early stages of radicalization.
+To analyse these discrete genomic profiles, I develop **Bayesian methods for factorizing discrete
+matrices** that:
 
-<nbsp>
+- uncover latent structure in high‑dimensional binary and ternary data,
+- provide compact and interpretable representations,
+- remain robust in the presence of noise, and
+- are tailored to **copy‑number alteration data** recorded as −1 (deletion), 0 (normal), and +1 (amplification).
 
-{% include base_path %}
+Current projects include:
 
-{% assign ordered_pages = site.research | sort:"order_number" %}
-
-{% for post in ordered_pages %}
-  {% include archive-single.html type="grid" %}
-{% endfor %}
+1. [Bayesian Boolean Matrix Factorization for Multiple Myeloma Copy‑Number Data](/research/bayesian-boolean-matrix-factorization/)
+2. [Bayesian Ternary Matrix Factorization for Sign‑Aware Discrete Data](/research/bayesian-ternary-matrix-factorization/)
