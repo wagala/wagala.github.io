@@ -38,8 +38,8 @@ Prior to joining Dana-Farber and Harvard, I served as a **Senior Lecturer**
 in Kenya, teaching undergraduate and graduate statistics while conducting
 research in financial time series, exchange-rate volatility, macroeconomic
 forecasting, and statistical learning for biological data. I also held a
-**Visiting Research Fellowship** at the Walter and Eliza Hall Institute of
-Medical Research in Melbourne, Australia. This breadth of experience reflects
+Visiting Scientist/PhD Candidate at the Walter and Eliza Hall Institute of
+Medical Research in Melbourne, Australia where Collaborated with an interdisciplinary team to analyze RNA-sequencing data from participants with acute rheumatic fever between disease-severity groups and treatments. This breadth of experience reflects
 my belief that principled statistical thinking transcends any single
 discipline.
 
