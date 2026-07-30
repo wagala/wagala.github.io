@@ -29,7 +29,7 @@ and economics.
 
 I earned my Ph.D. in Probability and Statistics from
 [CIMAT, A.C.](https://www.cimat.mx/) under the supervision of
-**Graciela González-Farías** and **Terry Speed**. My doctoral research
+Graciela González-Farías and Terry Speed. My doctoral research
 focused on statistical genomics, including classification methods for
 microarray gene expression data and statistical models for gene interaction
 networks in health and disease.
