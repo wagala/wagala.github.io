@@ -34,7 +34,7 @@ focused on statistical genomics, including classification methods for
 microarray gene expression data and statistical models for gene interaction
 networks in health and disease.
 
-Prior to joining Dana-Farber and Harvard, I served as a **Senior Lecturer**
+Prior to joining Dana-Farber and Harvard, I served as a Senior Lecturer
 in Kenya, teaching undergraduate and graduate statistics while conducting
 research in financial time series, exchange-rate volatility, macroeconomic
 forecasting, and statistical learning for biological data. I also held a
