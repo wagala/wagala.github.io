@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a Postdoctoral Research Fellow at
+I am a Postdoctoral Research Fellow at
 [Dana-Farber Cancer Institute](https://www.dana-farber.org/) and an affiliate
 of the Department of Biostatistics at the
 [Harvard T.H. Chan School of Public Health](https://hsph.harvard.edu)
