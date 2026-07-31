@@ -6,11 +6,9 @@ permalink: /research/bayesian-boolean-matrix-factorization/
 
 ## Overview
 
-This project develops **Bayesian Boolean Matrix Factorization (BBooMF)** methods for discovering
+This project develops **Bayesian Boolean Matrix Factorization (BBMF)** methods for discovering
 latent structure in **binary** genomic data, with a focus on Multiple Myeloma (MM) copy‑number
-alterations (CNAs) collected at diagnosis and relapse.
-
-MM CNA data encode the presence or absence of chromosomal events such as deletions and gains.
+alterations (CNAs) collected at diagnosis and relapse separately. MM CNA data encode the presence or absence of chromosomal events such as deletions and gains.
 Representing these profiles as Boolean matrices allows us to model **presence–absence patterns**
 directly, without forcing continuous approximations or arbitrary thresholds.
 
