@@ -2,8 +2,8 @@
 title: "Research"
 permalink: /research/
 ---
-
-My research focuses on **unsupervised learning via Discrete Matrix Factorization**, with a strong
+## Overview
+My current research focuses on **unsupervised learning via Discrete Matrix Factorization**, with a strong
 motivation from **Multiple Myeloma (MM)** genomics data.
 
 Multiple Myeloma is a malignancy of post‑germinal centre B cells (plasma cells) and is driven by
@@ -19,7 +19,13 @@ matrices** that:
 - remain robust in the presence of noise, and
 - are tailored to **copy‑number alteration data** recorded as −1 (deletion), 0 (normal), and +1 (amplification).
 
+## Broader Applications
+Although these methods are motivated by challenges in biomedical research, particularly cancer genomics, they are broadly applicable to any domain involving high-dimensional discrete data. Potential applications include recommender systems, text mining, social network analysis, cybersecurity, epidemiology, survey research, and other areas where uncovering interpretable latent structure and quantifying uncertainty are important.
+
+## Specific Projects
+
 Current projects include:
 
 1. [Bayesian Boolean Matrix Factorization for Multiple Myeloma Copy‑Number Data](/research/bayesian-boolean-matrix-factorization/)
-2. [Bayesian Ternary Matrix Factorization for Sign‑Aware Discrete Data](/research/bayesian-ternary-matrix-factorization/)
+2. [Joint Bayesian Boolean Matrix Factorization for Multiple Myeloma Copy‑Number Data](/research/joint-bayesian-boolean-matrix-factorization/)
+3. [Bayesian Ternary Matrix Factorization for Sign‑Aware Discrete Data](/research/bayesian-ternary-matrix-factorization/)
