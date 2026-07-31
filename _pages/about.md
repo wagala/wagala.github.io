@@ -7,7 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-# About
 
 Welcome! I am a Postdoctoral Research Fellow at
 [Dana-Farber Cancer Institute](https://www.dana-farber.org/) and an affiliate
