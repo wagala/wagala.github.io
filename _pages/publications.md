@@ -11,24 +11,27 @@ You can also find my articles on my Google Scholar profile.
 
 {% include base_path %}
 
-## Statistical Methodology
-
 {% assign methodology_publications = site.publications
   | where: "category", "methodology"
   | sort: "date"
   | reverse %}
-
-{% for post in methodology_publications %}
-{% include archive-single.html %}
-{% endfor %}
-
-## Applications
 
 {% assign application_publications = site.publications
   | where: "category", "applications"
   | sort: "date"
   | reverse %}
 
+{% assign method_size = methodology_publications | size %}
+
+## Statistical Methodology
+
+{% for post in methodology_publications %}
+{{ forloop.index }}. {% include archive-single.html %}
+{% endfor %}
+
+## Applications
+
 {% for post in application_publications %}
-{% include archive-single.html %}
+{% assign pub_num = forloop.index | plus: method_size %}
+{{ pub_num }}. {% include archive-single.html %}
 {% endfor %}
