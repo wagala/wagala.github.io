@@ -36,5 +36,4 @@ prepare students for research and professional practice.
 
 In addition to classroom teaching, I supervised numerous undergraduate research
 projects, mentoring students through study design, statistical analysis, and
-scientific writing. Several of these projects culminated in conference
-presentations and peer-reviewed publications.
+scientific writing. 
