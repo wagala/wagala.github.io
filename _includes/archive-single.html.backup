@@ -45,56 +45,48 @@
 
 {% elsif post.collection == 'publications' %}
 
-<div class="publication-card">
-  
-  <div class="publication-content">
+  {% if post.abstract %}
+  <details>
+    <summary>Abstract</summary>
+    <blockquote>
+      <p>{{ post.abstract }}</p>
+    </blockquote>
+  </details>
+  {% endif %}
 
-    {% if post.abstract %}
-    <div class="publication-abstract">
-      <details>
-        <summary>Abstract</summary>
-        <blockquote>
-          <p>{{ post.abstract }}</p>
-        </blockquote>
-      </details>
-    </div>
+  <p>
+
+    {% if post.citation %}
+      {{ post.citation }}
     {% endif %}
 
-    <div class="publication-citation">
-      {% if post.citation %}
-        {{ post.citation }}
-      {% endif %}
-    </div>
+    <br>
 
-    <div class="publication-actions">
-      {% if post.link %}
-        <a href="{{ post.link }}" class="publication-button" title="Publication">
-          <i class="fas fa-fw fa-link"></i> Link
-        </a>
-      {% endif %}
+    {% if post.link %}
+      <a href="{{ post.link }}" title="Publication">
+        <i class="fas fa-fw fa-link zoom" aria-hidden="true"></i>
+      </a>
+    {% endif %}
 
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="publication-button" title="PDF">
-          <i class="fas fa-fw fa-file-pdf"></i> PDF
-        </a>
-      {% endif %}
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" title="PDF">
+        <i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i>
+      </a>
+    {% endif %}
 
-      {% if post.code %}
-        <a href="{{ post.code }}" class="publication-button" title="Code">
-          <i class="fas fa-fw fa-code"></i> Code
-        </a>
-      {% endif %}
+    {% if post.code %}
+      <a href="{{ post.code }}" title="Code">
+        <i class="fas fa-fw fa-code zoom" aria-hidden="true"></i>
+      </a>
+    {% endif %}
 
-      {% if post.github %}
-        <a href="{{ post.github }}" class="publication-button" title="GitHub">
-          <i class="fab fa-fw fa-github"></i> GitHub
-        </a>
-      {% endif %}
-    </div>
+    {% if post.github %}
+      <a href="{{ post.github }}" title="GitHub">
+        <i class="fab fa-fw fa-github zoom" aria-hidden="true"></i>
+      </a>
+    {% endif %}
 
-  </div>
-
-</div>
+  </p>
 
 {% elsif post.collection == 'posts' and post.date %}
 
