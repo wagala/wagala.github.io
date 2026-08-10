@@ -86,11 +86,14 @@
 .publication-citation span,
 .publication-citation a,
 .publication-citation div,
-.publication-citation strong,
-.publication-citation b,
 .publication-citation em,
 .publication-citation i {
   font-weight: 400 !important;
+}
+
+.publication-citation b,
+.publication-citation strong {
+  font-weight: 700 !important;
 }
 
 .publication-citation em,

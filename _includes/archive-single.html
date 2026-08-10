@@ -62,7 +62,7 @@
 
    <div class="publication-citation">
   {% if post.citation %}
-    {{ post.citation }}
+    {{ post.citation | safe }}
   {% endif %}
 </div>
 
