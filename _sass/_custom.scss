@@ -2,11 +2,12 @@
    PUBLICATIONS PAGE
    ========================================================== */
 
-
-/* Each category has independent numbering */
+.publications-list {
+  counter-reset: publication-counter;
+}
 
 .publication-section {
-  counter-reset: publication-counter;
+  /* intentionally empty */
 }
 
 
@@ -38,12 +39,9 @@
     box-shadow 0.18s ease;
 }
 
-
 .publication-card:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -71,7 +69,6 @@
   line-height: 1;
 }
 
-
 .publication-number::before {
   content: counter(publication-counter);
 }
@@ -84,7 +81,6 @@
 .publication-content {
   flex: 1;
   min-width: 0;
-
   font-weight: 400 !important;
 }
 
@@ -95,19 +91,10 @@
 
 .publication-citation {
   margin: 0;
-
   font-size: 1rem;
   line-height: 1.65;
-
   font-weight: 400 !important;
 }
-
-
-/*
-   Force citation contents to normal weight.
-   This prevents inherited theme styles or old <strong>
-   tags from making the whole citation bold.
-*/
 
 .publication-citation,
 .publication-citation p,
@@ -121,16 +108,10 @@
   font-weight: 400 !important;
 }
 
-
-/* Keep intended italics */
-
 .publication-citation em,
 .publication-citation i {
   font-style: italic !important;
 }
-
-
-/* Links inside citation remain ordinary text weight */
 
 .publication-citation a {
   font-weight: 400 !important;
@@ -145,12 +126,10 @@
   margin: 0 0 0.8rem 0;
 }
 
-
 .publication-abstract summary {
   cursor: pointer;
   font-weight: 600;
 }
-
 
 .publication-abstract blockquote {
   margin-top: 0.6rem;
@@ -164,7 +143,6 @@
 .publication-actions {
   margin-top: 0.8rem;
 }
-
 
 .publication-button {
   display: inline-block;
@@ -189,16 +167,11 @@
     border-color 0.15s ease;
 }
 
-
 .publication-button:hover {
   background: #e7e9ec;
   border-color: #d5d8dc;
-
   text-decoration: none !important;
 }
-
-
-/* Icons inside buttons */
 
 .publication-button i {
   font-weight: inherit;
@@ -213,29 +186,22 @@
 
   .publication-card {
     gap: 0.7rem;
-
     padding: 1rem;
   }
 
-
   .publication-number {
     flex: 0 0 32px;
-
     width: 32px;
     height: 32px;
-
     font-size: 0.8rem;
   }
-
 
   .publication-citation {
     font-size: 0.95rem;
   }
 
-
   .publication-button {
     font-size: 0.75rem;
-
     padding: 0.25rem 0.55rem;
   }
 

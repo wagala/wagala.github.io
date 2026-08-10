@@ -15,16 +15,22 @@ author_profile: true
 {% assign methodology_publications = all_publications | where: "category", "methodology" %}
 {% assign application_publications = all_publications | where: "category", "applications" %}
 
+<div class="publications-list">
+
 ## Statistical Methodology
 
+<div class="publication-section">
 {% for post in methodology_publications %}
-  {% include archive-single.html index=forloop.index %}
+  {% include archive-single.html %}
 {% endfor %}
+</div>
 
 ## Applications
 
-{% assign offset = methodology_publications.size %}
+<div class="publication-section">
 {% for post in application_publications %}
-  {% assign current_index = forloop.index | plus: offset %}
-  {% include archive-single.html index=current_index %}
+  {% include archive-single.html %}
 {% endfor %}
+</div>
+
+</div>
