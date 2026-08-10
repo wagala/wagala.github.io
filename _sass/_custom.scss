@@ -2,22 +2,11 @@
    PUBLICATIONS PAGE
    ========================================================== */
 
-.publications-list {
-  counter-reset: publication-counter;
-}
-
-.publication-section {
-  /* intentionally empty */
-}
-
-
 /* ----------------------------------------------------------
    Publication card
    ---------------------------------------------------------- */
 
 .publication-card {
-  counter-increment: publication-counter;
-
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -67,10 +56,6 @@
   font-size: 0.9rem;
   font-weight: 700 !important;
   line-height: 1;
-}
-
-.publication-number::before {
-  content: counter(publication-counter);
 }
 
 

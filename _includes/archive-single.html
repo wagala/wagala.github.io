@@ -12,46 +12,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-{% if post.collection == 'publications' %}
-
-<div class="publication-card">
-  <div class="publication-number"></div>
-  <div class="publication-content">
-    {% if post.abstract %}
-    <details class="publication-abstract">
-      <summary>Abstract</summary>
-      <blockquote><p>{{ post.abstract }}</p></blockquote>
-    </details>
-    {% endif %}
-    <p class="publication-citation">
-      {% if post.citation %}{{ post.citation }}{% endif %}
-    </p>
-    <div class="publication-actions">
-      {% if post.link %}
-        <a href="{{ post.link }}" class="publication-button">
-          <i class="fas fa-fw fa-link"></i> Link
-        </a>
-      {% endif %}
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="publication-button">
-          <i class="fas fa-fw fa-file-pdf"></i> PDF
-        </a>
-      {% endif %}
-      {% if post.code %}
-        <a href="{{ post.code }}" class="publication-button">
-          <i class="fas fa-fw fa-code"></i> Code
-        </a>
-      {% endif %}
-      {% if post.github %}
-        <a href="{{ post.github }}" class="publication-button">
-          <i class="fab fa-fw fa-github"></i> GitHub
-        </a>
-      {% endif %}
-    </div>
-  </div>
-</div>
-
-{% else %}
+{% if post.collection == 'publications' %}<div class="publication-card"><div class="publication-number">{{ include.pub_index }}</div><div class="publication-content">{% if post.abstract %}<details class="publication-abstract"><summary>Abstract</summary><blockquote><p>{{ post.abstract }}</p></blockquote></details>{% endif %}<div class="publication-citation">{% if post.citation %}{{ post.citation }}{% endif %}</div><div class="publication-actions">{% if post.link %}<a href="{{ post.link }}" class="publication-button"><i class="fas fa-fw fa-link"></i> Link</a>{% endif %}{% if post.paperurl %}<a href="{{ post.paperurl }}" class="publication-button"><i class="fas fa-fw fa-file-pdf"></i> PDF</a>{% endif %}{% if post.code %}<a href="{{ post.code }}" class="publication-button"><i class="fas fa-fw fa-code"></i> Code</a>{% endif %}{% if post.github %}<a href="{{ post.github }}" class="publication-button"><i class="fab fa-fw fa-github"></i> GitHub</a>{% endif %}</div></div></div>{% else %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">

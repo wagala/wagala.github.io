@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% if author.googlescholar %}
-You can also find my articles on my Google Scholar profile.
+  You can also find my articles on <u><a href="{{ author.googlescholar }}">my Google Scholar profile</a>.</u>
 {% endif %}
 
 {% include base_path %}
@@ -15,18 +15,16 @@ You can also find my articles on my Google Scholar profile.
 {% assign methodology_publications = all_publications | where: "category", "methodology" %}
 {% assign application_publications = all_publications | where: "category", "applications" %}
 
-<div class="publications-list">
-
 ## Statistical Methodology
 
 {% for post in methodology_publications %}
-{% include archive-single.html %}
+  {% include archive-single.html pub_index=forloop.index %}
 {% endfor %}
 
 ## Applications
 
+{% assign offset = methodology_publications.size %}
 {% for post in application_publications %}
-{% include archive-single.html %}
+  {% assign current_index = forloop.index | plus: offset %}
+  {% include archive-single.html pub_index=current_index %}
 {% endfor %}
-
-</div>
