@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{ author.googlescholar }}">my Google Scholar profile</a>.</u>
+You can also find my articles on my Google Scholar profile.
 {% endif %}
 
 {% include base_path %}
@@ -19,18 +19,14 @@ author_profile: true
 
 ## Statistical Methodology
 
-<div class="publication-section">
 {% for post in methodology_publications %}
-  {% include archive-single.html %}
+{% include archive-single.html %}
 {% endfor %}
-</div>
 
 ## Applications
 
-<div class="publication-section">
 {% for post in application_publications %}
-  {% include archive-single.html %}
+{% include archive-single.html %}
 {% endfor %}
-</div>
 
 </div>
