@@ -1,16 +1,18 @@
-/* =========================================================
-   PUBLICATIONS
-   ========================================================= */
+/* ==========================================================
+   PUBLICATIONS PAGE
+   ========================================================== */
 
 
-/* Restart numbering for every publication section */
+/* Each category has independent numbering */
 
 .publication-section {
   counter-reset: publication-counter;
 }
 
 
-/* Individual publication card */
+/* ----------------------------------------------------------
+   Publication card
+   ---------------------------------------------------------- */
 
 .publication-card {
   counter-increment: publication-counter;
@@ -20,7 +22,7 @@
   gap: 1rem;
 
   margin: 1.4rem 0 1.8rem 0;
-  padding: 1.25rem 1.4rem;
+  padding: 1.3rem 1.4rem;
 
   background: #ffffff;
 
@@ -28,6 +30,8 @@
   border-radius: 10px;
 
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+
+  font-weight: 400 !important;
 
   transition:
     transform 0.18s ease,
@@ -43,7 +47,9 @@
 }
 
 
-/* Number circle */
+/* ----------------------------------------------------------
+   Number
+   ---------------------------------------------------------- */
 
 .publication-number {
   flex: 0 0 38px;
@@ -61,7 +67,7 @@
   border: 1px solid #dfe3e6;
 
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   line-height: 1;
 }
 
@@ -71,46 +77,72 @@
 }
 
 
-/* Main content */
+/* ----------------------------------------------------------
+   Main publication content
+   ---------------------------------------------------------- */
 
 .publication-content {
   flex: 1;
   min-width: 0;
 
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 
-/* Citation */
+/* ----------------------------------------------------------
+   Citation
+   ---------------------------------------------------------- */
 
 .publication-citation {
   margin: 0;
 
-  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.65;
+
+  font-weight: 400 !important;
 }
 
 
-/* Preserve intentional bold formatting */
+/*
+   Force citation contents to normal weight.
+   This prevents inherited theme styles or old <strong>
+   tags from making the whole citation bold.
+*/
 
+.publication-citation,
+.publication-citation p,
+.publication-citation span,
+.publication-citation a,
+.publication-citation div,
 .publication-citation strong,
-.publication-citation b {
-  font-weight: 700;
+.publication-citation b,
+.publication-citation em,
+.publication-citation i {
+  font-weight: 400 !important;
 }
 
 
-/* Preserve journal/title italics */
+/* Keep intended italics */
 
 .publication-citation em,
 .publication-citation i {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 
-/* Abstract */
+/* Links inside citation remain ordinary text weight */
+
+.publication-citation a {
+  font-weight: 400 !important;
+}
+
+
+/* ----------------------------------------------------------
+   Abstract
+   ---------------------------------------------------------- */
 
 .publication-abstract {
-  margin-bottom: 0.8rem;
+  margin: 0 0 0.8rem 0;
 }
 
 
@@ -125,14 +157,14 @@
 }
 
 
-/* Button area */
+/* ----------------------------------------------------------
+   Action buttons
+   ---------------------------------------------------------- */
 
 .publication-actions {
   margin-top: 0.8rem;
 }
 
-
-/* Buttons */
 
 .publication-button {
   display: inline-block;
@@ -148,7 +180,7 @@
   border-radius: 5px;
 
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 600 !important;
 
   text-decoration: none !important;
 
@@ -166,7 +198,16 @@
 }
 
 
-/* Mobile */
+/* Icons inside buttons */
+
+.publication-button i {
+  font-weight: inherit;
+}
+
+
+/* ----------------------------------------------------------
+   Mobile
+   ---------------------------------------------------------- */
 
 @media (max-width: 600px) {
 
@@ -184,6 +225,11 @@
     height: 32px;
 
     font-size: 0.8rem;
+  }
+
+
+  .publication-citation {
+    font-size: 0.95rem;
   }
 
 
