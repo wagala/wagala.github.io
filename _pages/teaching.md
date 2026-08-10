@@ -2,39 +2,39 @@
 permalink: /teaching/
 title: "Teaching"
 ---
+My teaching is closely integrated with my research, providing students with hands-on opportunities to strengthen their analytical thinking and develop practical skills in statistical and data analysis. I strive to help students
+develop strong statistical reasoning, computational skills, and the ability to
+apply quantitative methods to real-world problems. My teaching spans
+undergraduate courses in statistics, probability, mathematical modeling, and
+data analysis. Throughout my academic career, I have emphasized active
+learning, problem-solving, and the practical use of statistical software to
+prepare students for research and professional practice.
 
-Research plays a central role in my teaching as students improve their
-analytical skills and master the tools of data analysis through hands-on
-experience. I have taught undergraduate courses on political violence and
-statistical methodology. While at UNC, I taught the graduate statistics lab for
-Advanced Topics in Political Data Science, where my work was recognized by the
-Political Science Department's Earle Wallace Award for Graduate Student
-Teaching. I also served as a teaching assistant for courses in international
-relations and American politics at UNC, in addition to the ICPSR Summer Program
-where I was a teaching assistant for a course on Bayesian modeling in the social
-sciences. I am also a
-[certified instructor](https://carpentries.org/instructors/#jayrobwilliams) with
-[The Carpentries](https://carpentries.org/), which develops evidence-based
-methods for teaching "essential data and computational skills for conducting
-efficient, open, and reproducible research."
+## Bomet University, Kenya
 
+*Lecturer of Statistics (2020–2023)*
 
-You can view my teaching portfolio [here](/files/pdf/teaching/Portfolio.pdf).
-You can find a selection of my teaching materials, including all of the labs
-from Advanced Topics in Political Data Science, [here](/teaching-materials).
+- MAT 104e: Basic Mathematics and Analytic Geometry (Year 1)
+- MAT 113e: Differential Calculus (Year 1)
+- STA 100e: Probability and Statistics I (Year 1)
+- STA 201e: Probability and Statistics II (Year 2)
+- STA 302e: Multivariate Probability Distributions (Year 3)
+- STA 411: Time Series Analysis and Forecasting (Year 4)
 
-## Washington University in St. Louis
-- Pol Sci 3090: The Scientific Study of Civil War (Spring 2020)
-    - [Syllabus](/files/pdf/teaching/PS 3090 Syllabus.pdf)
-- Pol Sci 3171: International Conflict Management & Resolution (Fall 2019)
-    - [Syllabus](/files/pdf/teaching/PS 3171 Syllabus.pdf)
+## Chuka University, Kenya
 
-## The University of North Carolina at Chapel Hill
-- Poli 281: Quantitative Research in Political Science (Spring 2019)
-    - [Syllabus](/files/pdf/teaching/POLI 281 Syllabus.pdf)
-- Poli 891: Lab for Advanced Topics in Political Data Science (Fall 2017, Fall 2018)
-    - [Syllabus](/files/pdf/teaching/POLI 891 Syllabus.pdf)
+*Lecturer of Statistics (2018–2020)*
 
-## ICPSR Summer Program
-- Introduction to Applied Bayesian Modeling (Summer 2017)
-    - [Syllabus](/files/pdf/teaching/bayes2017.pdf)
+- MATH 141: Introductory Statistics (Year 1)
+- MATH 240: Probability and Statistics I (Year 2)
+- MATH 241: Probability and Statistics II (Year 2)
+- MATH 344: Theory of Estimation (Year 3)
+- MATH 442: Time Series Analysis (Year 3)
+- MATH 443: Design and Analysis of Experiments I (Year 3)
+- MATH 444: Design and Analysis of Experiments II (Year 3)
+- MATH 449: Probability Theory (Year 4)
+
+In addition to classroom teaching, I supervised numerous undergraduate research
+projects, mentoring students through study design, statistical analysis, and
+scientific writing. Several of these projects culminated in conference
+presentations and peer-reviewed publications.
