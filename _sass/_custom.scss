@@ -1,40 +1,156 @@
-/* ==========================================================================
-   CUSTOM CSS BY ME
-   ========================================================================== */
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
 
-/*
-   Visibility
-   ========================================================================== */
+.pub-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
 
-.zoom{
-  /* default button */
-  
-  &:hover {
-    transform: scale(1.25);
+
+/* Publication number */
+
+.pub-number {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f3f5;
+  border: 1px solid #dfe3e6;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+/* Publication container */
+
+.pub-entry {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* Card */
+
+.pub-card {
+  padding: 1.2rem 1.4rem;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7e9;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+
+.pub-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Citation */
+
+.pub-citation {
+  line-height: 1.65;
+  margin: 0;
+}
+
+
+/* Abstract */
+
+.pub-abstract {
+  margin-bottom: 0.8rem;
+}
+
+.pub-abstract summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* Buttons */
+
+.pub-actions {
+  margin-top: 0.8rem;
+}
+
+
+.pub-button {
+  display: inline-block;
+
+  margin-right: 0.4rem;
+  margin-top: 0.25rem;
+
+  padding: 0.3rem 0.7rem;
+
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+
+  background: #f3f4f6;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+
+.pub-button:hover {
+  background: #e7e9ec;
+  border-color: #d5d8dc;
+
+  text-decoration: none !important;
+}
+
+
+/* Remove unnecessary heading spacing generated
+   by archive-single for publication entries */
+
+.pub-entry .archive__item-title {
+  display: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .pub-wrapper {
+    gap: 0.7rem;
   }
-}
 
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
+  .pub-number {
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
 
-/* overlay effect (full height and width) - lays on top of the container */
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: $dark-gray;
-}
+    font-size: 0.8rem;
+  }
 
-/* When you mouse over the container, fade in the overlay */
-.container:hover .overlay {
-  opacity: 0.25;
+  .pub-card {
+    padding: 1rem;
+  }
+
 }
