@@ -60,11 +60,11 @@
     </div>
     {% endif %}
 
-    <div class="publication-citation">
-      {% if post.citation %}
-        {{ post.citation }}
-      {% endif %}
-    </div>
+   <div class="publication-citation">
+  {% if post.citation %}
+    {{ post.citation | safe }}
+  {% endif %}
+</div>
 
     <div class="publication-actions">
       {% if post.link %}
