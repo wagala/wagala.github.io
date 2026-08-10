@@ -2,52 +2,29 @@
    PUBLICATIONS
    ========================================================= */
 
-.pub-wrapper {
+
+/* Restart numbering for every publication section */
+
+.publication-section {
+  counter-reset: publication-counter;
+}
+
+
+/* Individual publication card */
+
+.publication-card {
+  counter-increment: publication-counter;
+
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin: 1.5rem 0 2rem 0;
-}
 
-
-/* Publication number */
-
-.pub-number {
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: #f1f3f5;
-  border: 1px solid #dfe3e6;
-
-  font-size: 0.95rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-
-/* Publication container */
-
-.pub-entry {
-  flex: 1;
-  min-width: 0;
-}
-
-
-/* Card */
-
-.pub-card {
-  padding: 1.2rem 1.4rem;
+  margin: 1.4rem 0 1.8rem 0;
+  padding: 1.25rem 1.4rem;
 
   background: #ffffff;
 
-  border: 1px solid #e5e7e9;
+  border: 1px solid #e3e6e8;
   border-radius: 10px;
 
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
@@ -58,7 +35,7 @@
 }
 
 
-.pub-card:hover {
+.publication-card:hover {
   transform: translateY(-2px);
 
   box-shadow:
@@ -66,45 +43,109 @@
 }
 
 
+/* Number circle */
+
+.publication-number {
+  flex: 0 0 38px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f3f5;
+  border: 1px solid #dfe3e6;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+.publication-number::before {
+  content: counter(publication-counter);
+}
+
+
+/* Main content */
+
+.publication-content {
+  flex: 1;
+  min-width: 0;
+
+  font-weight: 400;
+}
+
+
 /* Citation */
 
-.pub-citation {
-  line-height: 1.65;
+.publication-citation {
   margin: 0;
+
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+
+/* Preserve intentional bold formatting */
+
+.publication-citation strong,
+.publication-citation b {
+  font-weight: 700;
+}
+
+
+/* Preserve journal/title italics */
+
+.publication-citation em,
+.publication-citation i {
+  font-style: italic;
 }
 
 
 /* Abstract */
 
-.pub-abstract {
+.publication-abstract {
   margin-bottom: 0.8rem;
 }
 
-.pub-abstract summary {
+
+.publication-abstract summary {
   cursor: pointer;
   font-weight: 600;
 }
 
 
-/* Buttons */
+.publication-abstract blockquote {
+  margin-top: 0.6rem;
+}
 
-.pub-actions {
+
+/* Button area */
+
+.publication-actions {
   margin-top: 0.8rem;
 }
 
 
-.pub-button {
+/* Buttons */
+
+.publication-button {
   display: inline-block;
 
-  margin-right: 0.4rem;
   margin-top: 0.25rem;
+  margin-right: 0.4rem;
 
   padding: 0.3rem 0.7rem;
 
+  background: #f3f4f6;
+
   border: 1px solid #e1e4e8;
   border-radius: 5px;
-
-  background: #f3f4f6;
 
   font-size: 0.8rem;
   font-weight: 600;
@@ -117,7 +158,7 @@
 }
 
 
-.pub-button:hover {
+.publication-button:hover {
   background: #e7e9ec;
   border-color: #d5d8dc;
 
@@ -125,32 +166,31 @@
 }
 
 
-/* Remove unnecessary heading spacing generated
-   by archive-single for publication entries */
-
-.pub-entry .archive__item-title {
-  display: none;
-}
-
-
 /* Mobile */
 
 @media (max-width: 600px) {
 
-  .pub-wrapper {
+  .publication-card {
     gap: 0.7rem;
+
+    padding: 1rem;
   }
 
-  .pub-number {
+
+  .publication-number {
     flex: 0 0 32px;
+
     width: 32px;
     height: 32px;
 
     font-size: 0.8rem;
   }
 
-  .pub-card {
-    padding: 1rem;
+
+  .publication-button {
+    font-size: 0.75rem;
+
+    padding: 0.25rem 0.55rem;
   }
 
 }
