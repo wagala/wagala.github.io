@@ -1,4 +1,3 @@
-cat > _pages/publications.md << 'EOF'
 ---
 layout: archive
 title: "Publications"
@@ -12,21 +11,24 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign all_publications = site.publications | sort: "date" | reverse %}
-{% assign methodology_publications = all_publications | where: "category", "methodology" %}
-{% assign application_publications = all_publications | where: "category", "applications" %}
-
 ## Statistical Methodology
 
+{% assign methodology_publications = site.publications
+  | where: "category", "methodology"
+  | sort: "date"
+  | reverse %}
+
 {% for post in methodology_publications %}
-  {% include archive-single.html index=forloop.index %}
+  {% include archive-single.html %}
 {% endfor %}
 
 ## Applications
 
-{% assign offset = methodology_publications.size %}
+{% assign application_publications = site.publications
+  | where: "category", "applications"
+  | sort: "date"
+  | reverse %}
+
 {% for post in application_publications %}
-  {% assign current_index = forloop.index | plus: offset %}
-  {% include archive-single.html index=current_index %}
+  {% include archive-single.html %}
 {% endfor %}
-EOF

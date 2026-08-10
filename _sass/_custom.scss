@@ -1,23 +1,40 @@
-.pub-card {
-  display: flex;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  background: white;
-  transition: box-shadow 0.2s;
+/* ==========================================================================
+   CUSTOM CSS BY ME
+   ========================================================================== */
+
+/*
+   Visibility
+   ========================================================================== */
+
+.zoom{
+  /* default button */
+  
+  &:hover {
+    transform: scale(1.25);
+  }
 }
-.pub-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
 }
-.pub-number {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #52adc8;
-  min-width: 40px;
-  margin-right: 16px;
+
+/* overlay effect (full height and width) - lays on top of the container */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: $dark-gray;
 }
-.pub-content {
-  flex: 1;
+
+/* When you mouse over the container, fade in the overlay */
+.container:hover .overlay {
+  opacity: 0.25;
 }
