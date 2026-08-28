@@ -30,7 +30,8 @@ The following are the repositories for the software accompaying my research proj
 
 **Paper:** [A Joint Bayesian Boolean Matrix Factorization with Application to Chromosomal Copy Number Alterations in Multiple Myeloma](https://arxiv.org/abs/2608.02550)
 
-**Description:** R codes used Joint Boolean Matrix Factorization.
+**Description:**  R codes used in implementing Joint Boolean Matrix Factorization.
+
 ---
 
 # TBMF
