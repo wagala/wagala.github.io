@@ -29,6 +29,7 @@ The following are the repositories for the software accompaying my research proj
 **Repository:** [wagala/jBBMF](https://github.com/wagala/jBBMF)
 
 **Paper:** [A Joint Bayesian Boolean Matrix Factorization with Application to Chromosomal Copy Number Alterations in Multiple Myeloma](https://arxiv.org/abs/2608.02550)
+
 **Description:** R codes used Joint Boolean Matrix Factorization.
 ---
 
