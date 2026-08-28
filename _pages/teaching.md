@@ -13,6 +13,7 @@ prepare students for research and professional practice.
 ## Bomet University, Kenya
 
 *Lecturer of Statistics (2020–2023)*
+### Undegraduate Courses
 
 - MAT 104e: Basic Mathematics and Analytic Geometry (Year 1)
 - MAT 113e: Differential Calculus (Year 1)
@@ -20,6 +21,13 @@ prepare students for research and professional practice.
 - STA 201e: Probability and Statistics II (Year 2)
 - STA 302e: Multivariate Probability Distributions (Year 3)
 - STA 411: Time Series Analysis and Forecasting (Year 4)
+
+### Graduate Courses
+
+- BST 811: Statistical Computing in R (MSc Biostatistics)
+- BST 820: Biostatistics II  (MSc Biostatistics)
+- BST 823: Regression Analysis (MSc Biostatistics)
+- BST 827: Applied Multivariate Analysis (MSc Biostatistics)
 
 ## Chuka University, Kenya
 
