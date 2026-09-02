@@ -1,5 +1,6 @@
 ---
 title: "Volatility Modelling of the Nairobi Securities Exchange Weekly Returns Using the ARCH-Type Models"
+published: false
 collection: "publications"
 permalink: "/publication/2012-volatility-modelling-nse-weekly-returns"
 date: 2012-03-01
